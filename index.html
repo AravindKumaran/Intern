@@ -13,11 +13,39 @@
 	<link rel="stylesheet" href="./Bromine _ Homepage 1_files/slick.css">
 	<link rel="stylesheet" href="./Bromine _ Homepage 1_files/main.css">
 	<link rel="stylesheet" href="./Bromine _ Homepage 1_files/css">
+	<link rel="stylesheet" href="./Bromine _ Homepage 1_files/text-ad.css" type="text/css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
-<body id="index1" class="homepage">
-
+<body id="page-top" data-offset="90" data-target=".navbar-custom" data-spy="scroll" class="homepage">
+	<div>
+		<button type="button" id="myBtn" class="rotateform  pulse">Enquiry form</button>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div id="main" style="display: inline-block;" class="col-lg-6 col-md-6 col-sm-6 col-xs-6  cont main-mo">
+				<div class="">
+					<button class="close" id="closes"
+						style="margin-left: 94%;border-style: hidden; border-radius:33%;">x</button>
+					<!--<h2 class="titleef" style="text-align:center;">Enquiry form</h2>-->
+					<p class="offerText01" style="text-align: center;">REGISTRATION FORM</p>
+					<p class="offerText02">THREE SESSIONS</p>
+					<p class="offerText03">HURRY UP!!!</p>
+					<form method="post" action="./Bromine _ Homepage 1_files//mail.php" id="enqform">
+						<input class="form" type="text" name="name" placeholder="Name" required><br>
+						<input class="form" type="email" name="email" placeholder="Email ID" required><br>
+						<input class="form" type="text" name="number" placeholder="Mobile Number" pattern="[0-9]{10}"
+							required><br>
+						<input class="form" type="text" name="message" placeholder="Message" required
+							style="padding-bottom:10%;"><br>
+						<div class="g-recaptcha" data-sitekey="6Lc066EUAAAAAAt3coYM5HgOotMtCx7Ucuk71SEp"></div>
+						<button type="submit" class="sub">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 	<header>
 		<div class="container">
 			<div id="topbar">
@@ -406,7 +434,8 @@
 							Vintek Solution</a></p>
 				</div>
 				<div class="col-sm-5">
-					<p class="copyright">Contact us @ 7418815440 / 7010733930 or <a href="mailto::intern.vinteksolution.com">mail us at
+					<p class="copyright">Contact us @ 7418815440 / 7010733930 or <a
+							href="mailto::intern.vinteksolution.com">mail us at
 							intern.vinteksolution.com</a> </p>
 				</div>
 				<div class="col-sm-4">
@@ -427,6 +456,29 @@
 	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 	<script>
 		AOS.init();
+	</script>
+	<script>
+		$(document).ready(function () {
+			$("#myBtn").click(function () {
+				$('#main').fadeIn('fast');
+			});
+			$("#closes").click(function () {
+				$('#main').fadeOut('fast');
+			});
+			$("#closes").click(function () {
+				$('#main1').fadeOut('fast');
+			});
+			$("#closes").click(function () {
+				$('#main1').fadeOut('fast');
+			});
+
+		});
+		$(window).on('load', function () {
+			//$('#myModal').modal('show');
+		});
+		jQuery(function () {
+			jQuery('#myBtn').click();
+		});
 	</script>
 </body>
 
