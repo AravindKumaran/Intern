@@ -49,16 +49,15 @@
 	<header>
 		<div class="container">
 			<div id="topbar">
-				<h1 class="logo"><a href="#"><img width="8%" height="8%"
-							src="./Bromine _ Homepage 1_files/vintek.png" alt="Logo"></a></h1>
+				<h1 class="logo"><a href="#"><img width="8%" height="8%" src="./Bromine _ Homepage 1_files/vintek.png"
+							alt="Logo"></a></h1>
 			</div>
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<p class="pretitle">ONLINE VIDEO TRAININGS</p>
 					<h2>BOOST YOUR TRADING SKILLS</h2>
 					<p>Learn how to trade stocks online and get certified!</p>
-					<a href="#"
-						class="bluebutton">SIGN UP TO GET A 3-DAY WORKSHOP</a>
+					<a href="#" id="signUp" class="bluebutton">SIGN UP TO GET A 3-DAY WORKSHOP</a>
 				</div>
 			</div>
 		</div>
@@ -72,9 +71,8 @@
 			<li id="rslides1_s2" class=""
 				style="float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; transition: opacity 500ms ease-in-out 0s;">
 				<img src="./Bromine _ Homepage 1_files/slide-3.jpg" class="resp-img" alt="Slide"></li>
-		</ul><a href="#"
-			class="rslides_nav rslides1_nav prev"><i class="zmdi zmdi-chevron-left zmdi-hc-2x text-center"></i></a><a
-			href="#"
+		</ul><a href="#" class="rslides_nav rslides1_nav prev"><i
+				class="zmdi zmdi-chevron-left zmdi-hc-2x text-center"></i></a><a href="#"
 			class="rslides_nav rslides1_nav next"><i class="zmdi zmdi-chevron-right zmdi-hc-2x text-center"></i></a>
 	</header>
 
@@ -417,8 +415,7 @@
 				<div class="col-sm-12">
 					<p>ONLINE LEARNING FROM EVERYWHERE</p>
 					<h4>Your feedback matters</h4>
-					<a href="#"
-						class="bluebutton">GIVE FEEDBACK</a>
+					<a href="#" class="bluebutton">GIVE FEEDBACK</a>
 				</div>
 			</div>
 		</div>
@@ -460,6 +457,9 @@
 	<script>
 		$(document).ready(function () {
 			$("#myBtn").click(function () {
+				$('#main').fadeIn('fast');
+			});
+			$("#signUp").click(function () {
 				$('#main').fadeIn('fast');
 			});
 			$("#closes").click(function () {
