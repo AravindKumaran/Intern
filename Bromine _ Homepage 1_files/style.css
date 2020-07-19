@@ -1,9 +1,9 @@
 p, span{
     margin:0;
-    font-family: 'Montserrat';
+    font-family: "Raleway", sans-serif;
 }
 div{
-    font-family: 'Montserrat';
+    font-family: "Raleway", sans-serif;
 }
 p + p{
     margin-top:20px;
