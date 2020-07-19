@@ -48,11 +48,51 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="container">
+		<div class="row">
+			<div id="feedback" style="display: inline-block;" class="col-lg-6 col-md-6 col-sm-6 col-xs-6  cont main-mo">
+				<div class="">
+					<button class="close" id="feedbackcloses"
+						style="margin-left: 94%;border-style: hidden; border-radius:33%;">x</button>
+					<!--<h2 class="titleef" style="text-align:center;">Enquiry form</h2>-->
+					<p class="offerText01" style="text-align: center;">FEEDBACK FORM</p>
+					<!-- <p class="offerText02">THREE SESSIONS</p>
+					<p class="offerText03">HURRY UP!!!</p> -->
+					<form action="mail.php" method="POST" id="feedbackForm" name="feedbackForm">
+						<input class="form" type="text" name="name" placeholder="Name" required><br>
+						<input class="form" type="email" name="email" placeholder="Email ID" required><br>
+						<input class="form" type="text" name="number" placeholder="Mobile Number" pattern="[0-9]{10}"
+							required><br>
+						<input class="form" type="text" name="message" placeholder="Comments (optional)"
+							style="padding-bottom:10%;"><br>
+						<div class="g-recaptcha" data-sitekey="6Lc066EUAAAAAAt3coYM5HgOotMtCx7Ucuk71SEp"></div>
+						<h4 style="color: white;">Your Rating</h4 style="color: white;">
+						<input type="hidden" name="rating" id="rating" />
+						<ul onMouseOut="resetRating();">
+							<li onmouseover="highlightStar(this);" onmouseout="removeHighlight();"
+								onClick="addRating(this);">&#9733;</li>
+							<li onmouseover="highlightStar(this);" onmouseout="removeHighlight();"
+								onClick="addRating(this);">&#9733;</li>
+							<li onmouseover="highlightStar(this);" onmouseout="removeHighlight();"
+								onClick="addRating(this);">&#9733;</li>
+							<li onmouseover="highlightStar(this);" onmouseout="removeHighlight();"
+								onClick="addRating(this);">&#9733;</li>
+							<li onmouseover="highlightStar(this);" onmouseout="removeHighlight();"
+								onClick="addRating(this);">&#9733;</li>
+						</ul>
+						<button type="submit" class="sub">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<header>
 		<div class="container">
 			<div id="topbar">
-				<h1 class="logo"><a href="#"><img width="8%" height="8%" src="./Bromine _ Homepage 1_files/Vintek_logo.png"
-							alt="Logo"></a></h1>
+				<h1 class="logo"><a href="#"><img width="8%" height="8%"
+							src="./Bromine _ Homepage 1_files/Vintek_logo.png" alt="Logo"></a></h1>
 			</div>
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
@@ -417,7 +457,7 @@
 				<div class="col-sm-12">
 					<p>ONLINE LEARNING FROM EVERYWHERE</p>
 					<h4>Your feedback matters</h4>
-					<a href="#" class="bluebutton">GIVE FEEDBACK</a>
+					<a id="feedbackBtn" class="bluebutton">GIVE FEEDBACK</a>
 				</div>
 			</div>
 		</div>
@@ -461,11 +501,17 @@
 			$("#myBtn").click(function () {
 				$('#main').fadeIn('fast');
 			});
+			$("#feedbackBtn").click(function () {
+				$('#feedback').fadeIn('fast');
+			});
 			$("#signUp").click(function () {
 				$('#main').fadeIn('fast');
 			});
 			$("#closes").click(function () {
 				$('#main').fadeOut('fast');
+			});
+			$("#feedbackcloses").click(function () {
+				$('#feedback').fadeOut('fast');
 			});
 			$("#closes").click(function () {
 				$('#main1').fadeOut('fast');
@@ -476,11 +522,48 @@
 
 		});
 		$(window).on('load', function () {
+			jQuery('#feedbackcloses').click();
 			//$('#myModal').modal('show');
 		});
 		jQuery(function () {
 			jQuery('#myBtn').click();
 		});
+
+		function highlightStar(obj) {
+			removeHighlight();
+			$('li').each(function (index) {
+				$(this).addClass('highlight');
+				if (index == $("li").index(obj)) {
+					return false;
+				}
+			});
+		}
+
+		function removeHighlight() {
+			$('li').removeClass('selected');
+			$('li').removeClass('highlight');
+		}
+
+		function addRating(obj) {
+			$('li').each(function (index) {
+				$(this).addClass('selected');
+				$('#rating').val((index + 1));
+				if (index == $("li").index(obj)) {
+					return false;
+				}
+			});
+		}
+
+		function resetRating() {
+			if ($("#rating").val()) {
+				$('li').each(function (index) {
+					$(this).addClass('selected');
+					if ((index + 1) == $("#rating").val()) {
+						return false;
+					}
+				});
+			}
+		}
 	</script>
 </body>
 

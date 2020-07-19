@@ -94,7 +94,9 @@
         curser:pointer!important;
     }
    
-   
+   #feedbackcloses {
+    curser:pointer;
+   }
   
 }
 @media only screen and (min-width:329px) and (max-width:450px)
@@ -450,6 +452,9 @@
     /* height: 62%!important; */
    }
     #closes{
+        curser:pointer;
+    }
+    #feedbackcloses {
         curser:pointer;
     }
    
