@@ -1,29 +1,3 @@
-/*---TOC---*/
-/*
-0 Initializations - $init
-1 Typography - $typogtaphy
-2 Helper Classes - $helper
-3 Header - $header
-4 Homepage 1 (plus common styles) - $index1
-5 Homepage 2 - $index2
-6 Homepage 3 - $index3
-7 Teachers - $teachers
-8 Teacher single - $teachershingle
-9 Courses grids - $coursesgrids
-10 Pricings - $pricings
-11 How it works - $howitworks
-12 Services - $services
-13 Blog - $blog
-14 Footer - $footer
-15 Responsive $responsive
-
-
-*/
-/*---------*/
-
-
-/*Initializations $init*/
-
 h1, h2, h3, h4, h5, h6, p, ul{
 	margin: 0;
 }
@@ -34,6 +8,7 @@ h1, h2, h3, h4, h5, h6, p, ul{
 
 html,body{
 	overflow-x: hidden;
+	font-size:16px !important
 }
 
 /*Typography $typography*/
@@ -64,7 +39,7 @@ h3::after{
 
 .abs{
 	font-family: "Work Sans", sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 	color: #535353;
 	line-height: 20px;
 }
@@ -262,7 +237,7 @@ nav > ul > li:hover .submenu{
 .submenu a{
 	font-family: "Montserrat", sans-serif;
 	color: #5c5c5c;
-	font-size: 12px;
+	font-size: 16px;
 	position: relative;
 	left: 0;
 	transition: all 0.2s ease;
@@ -401,7 +376,7 @@ nav > ul > li:hover .submenu{
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
 	color: #202020;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1;
 	position: absolute;	
 	top: 12px;
@@ -412,7 +387,7 @@ nav > ul > li:hover .submenu{
 	font-family: "Work Sans", sans-serif;
 	font-weight: 500;
 	color: #18c967;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1;
 	position: absolute;
 	top: 42px;
@@ -602,7 +577,7 @@ h2 + p{
 .bluebutton{
 	font-family: "Montserrat", sans-serif;
 	color: #fff;
-	font-size: 12px;
+	font-size: 14px;
 	display: block;
 	margin: auto;
 	background-color: #12c8fc;
@@ -703,7 +678,7 @@ header .scrolldown:hover > span{
 
 .feature p{
 	font-family: "Work Sans", sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 	color: #535353;
 	min-height: 64px;
 }
@@ -755,7 +730,7 @@ header .scrolldown:hover > span{
 
 h3 + p {
 	font-family: "Work Sans", sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	color: #6a7173;
 }
 
@@ -940,7 +915,7 @@ h3 + p {
 
 .signup a{
 	font-family: "Montserrat", sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 	line-height: 44px;
 	width: 145px;
 	border-radius: 2px;
@@ -1029,7 +1004,7 @@ h3 + p {
 
 .popular .tutorial .tutorial-details .greybutton{
 	font-family: "Montserrat", sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 	display: block;
 	text-align: center;
 	line-height: 49px;
@@ -1048,7 +1023,7 @@ h3 + p {
 
 .testimonials .name{
 	font-family: "Montserrat", sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	color: #202020;
 	margin-top: 25px;
 	margin-bottom: 23px;
@@ -1062,7 +1037,7 @@ h3 + p {
 
 .testimonials .name em{
 	font-family: "Open Sans", sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 	margin-left: 15px;
 	position: relative;
 	bottom: 1px;
@@ -1111,7 +1086,7 @@ h3 + p {
 
 .whyus p{
 	font-family: "Work Sans", sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 	color: #535353;
 	margin-bottom: 55px;
 }
@@ -1199,7 +1174,7 @@ h3 + p {
 .pros .teacher{
 	display: block;
 	font-family: "Montserrat", sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .pros .teacher a{
@@ -1211,7 +1186,7 @@ h3 + p {
 .pros a + p,
 .teacher-page h5 + p{
 	color: #12c8fc;
-	font-size: 12px;
+	font-size: 16px;
 }
 
 .pros .overlay img{
@@ -1267,7 +1242,7 @@ h3 + p {
 
 .platform-feature p{
 	font-family: "Work Sans", sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 	padding: 0 30px;
 }
 
@@ -1431,13 +1406,13 @@ h3 + p {
 
 .index-3-categories .category-with-bg h5{
 	font-weight: 600;
-	font-size: 14px;
+	font-size: 16px;
 	padding-top: 90px;
 	margin-bottom: 14px;
 }
 
 .index-3-categories .category-with-bg p{
-	font-size: 12px;
+	font-size: 16px;
 	margin-bottom: 20px;
 }
 
@@ -1898,7 +1873,7 @@ aside.categories h6,
 #blog-2 .categories h6{
 	font-family: "Montserrat", sans-serif;
 	font-weight: 600;
-	font-size: 14px;
+	font-size: 16px;
 	color: #202020;
 }
 
@@ -1927,7 +1902,7 @@ aside.categories ul li a,
 #blog-1 .categories ul li a,
 #blog-2 .categories ul li a{
 	font-family: "Montserrat", sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 	color: #5c5c5c;
 	transition: all 0.3s ease;
 }
@@ -2090,7 +2065,7 @@ aside.categories ul li:not(:last-child),
 	left: 0;
 	font-family: "Work Sans", sans-serif;
 	font-weight: 500;
-	font-size: 12px;
+	font-size: 16px;
 }
 
 .page-heading .breadcrumbs a,
@@ -2129,7 +2104,7 @@ aside.categories ul li:not(:last-child),
 #blog-1 h4,
 #blog-2 h4{
 	font-family: "Montserrat", sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	color: #202020;
 	font-weight: 600;
 	margin-top: 50px;
@@ -2160,7 +2135,7 @@ aside.categories ul li:not(:last-child),
 #course-single .includes > li{
 	line-height: 30px;
 	font-family: "Work Sans", sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 	color: #535353;
 }
 
@@ -2228,7 +2203,7 @@ aside.categories ul li:not(:last-child),
 
 .option-items li a{
 	font-family: "Work Sans", sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 	color: #535353;
 }
 
@@ -2288,7 +2263,7 @@ aside.categories ul li:not(:last-child),
 .comment a{
 	font-family: "Montserrat", sans-serif;
 	color: #202020;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .comment .postedon{
@@ -2374,7 +2349,7 @@ aside.categories ul li:not(:last-child),
 .order .order-or + p{
 	font-family: "Montserrat", sans-serif;
 	color: #202020;
-	font-size: 12px;
+	font-size: 16px;
 	letter-spacing: 1px;
 	margin-top: 8px;
 }
@@ -2397,7 +2372,7 @@ aside.categories ul li:not(:last-child),
 	border-radius: 42px;
 	display: inline-block;
 	font-family: "Montserrat", sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 	color: #202020;
 }
 
@@ -2438,7 +2413,7 @@ aside.categories ul li:not(:last-child),
 	background-color: #12c8fc;
 	display: block;
 	font-family: "Montserrat",sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 	border-radius: 2px;
 	transition: all 0.3s ease;
 	margin-top: 22px;
@@ -2620,7 +2595,7 @@ aside.categories ul li:not(:last-child),
 
 #how-it-works .step p{
 	font-family: "Work Sans", sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 	color: #535353;
 }
 
@@ -2760,14 +2735,14 @@ aside.categories ul li:not(:last-child),
 
 #blog-1 .about-author .teacher-name{
 	font-family: "Montserrat", sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	color: #202020;
 }
 
 #blog-1 .about-author .teacher-name + p{
 	font-family: "Montserrat", sans-serif;
 	color: #12c8fc;
-	font-size: 12px;
+	font-size: 16px;
 	margin-bottom: 15px;	
 }
 
@@ -2890,7 +2865,7 @@ input[type="search"]{
 
 .recent-post > a{
 	font-family: "Montserrat", sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 	color: #202020;
 }
 
@@ -2942,7 +2917,7 @@ h4 + .recent-post{
 
 #blog-2 .blog-item .greybutton{
 	font-family: "Montserrat", sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 	display: block;
 	text-align: center;
 	line-height: 34px;
@@ -3010,7 +2985,7 @@ footer .email::before{
 
 footer .contactinfo li{
 	font-family: "Work Sans", sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 	color: #fff;
 }
 
@@ -3066,7 +3041,7 @@ footer .information li{
 footer .information li a{
 	font-family: "OpenSans", sans-serif;
 	color: #fff;
-	font-size: 12px;
+	font-size: 16px;
 	display: inline-block;
 	text-decoration: none;
 	transition: color 0.3s ease;
@@ -3111,7 +3086,7 @@ footer .payments li:not(:last-child){
 
 footer .copyright{
 	font-family: "OpenSans", sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 	color: #fff;
 	line-height: 68px;
 }
@@ -3218,7 +3193,7 @@ footer .botbar{
 	}
 
 	header h2 + p{
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	.teacher{
