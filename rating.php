@@ -6,7 +6,7 @@ $mobile=$_POST['number'];
 $mes=$_POST['message'];
 $star=$_POST['rating'];
 
-$to= "aravind@vinteksolution.com,intern@vinteksolution.com";
+$to= "aravind@vinteksolution.com,intern@vinteksolution.com,srinivasansm@vinteksolution.com,asfiya@vinteksolution.com";
 $subject='Vintek Solution Intern Response';
 $message = "<strong>Name: </strong>".$Name."<br><strong>E-mail ID: </strong>".$email."<br><strong>Mobile number: </strong>".$mobile."<br><strong>Message: </strong>".$mes"<br><strong>Rating: </strong>".$star;
 
